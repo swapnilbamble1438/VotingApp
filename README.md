@@ -5,7 +5,10 @@ url: https://swapnilbamble1438.github.io/VotingApplication/
 
 ### It is SpringBoot Project. Build in Spring Tool Suite.
 ## It is a Voting Application. 
-User can vote the Candidate, and Admin has the permission to see the vote details
+
+### Application Features:
+- User can vote the Candidate.
+- Admin has the permission to see the vote details, manage Voters and Candidates votes.
 
 ### Technology used in this Project: 
 - i) Thymeleaf,CSS : designing page layout. 
