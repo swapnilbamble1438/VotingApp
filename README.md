@@ -1,5 +1,8 @@
 # VotingApp 
 
+ ### Take a look at this Application
+url: https://swapnilbamble1438.github.io/VotingApplication/
+
 ### It is SpringBoot Project. Build in Spring Tool Suite.
 ## It is a Voting Application. 
 User can vote the Candidate, and Admin has the permission to see the vote details
@@ -70,11 +73,8 @@ User can vote the Candidate, and Admin has the permission to see the vote detail
   
  - Right Click On Project > Run as > Spring Boot App
  - Now in Browser Type Url: http://localhost:9002
--  Note: In Url put Port according to your application.properties file.
+ -  Note: In Url put Port according to your application.properties file.
  -  Application will get Open.
-
- ### Try Javascript Version 
-url: https://swapnilbamble1438.github.io/VotingApplication/
 
 
 ### Some Screenshots of this Project:
