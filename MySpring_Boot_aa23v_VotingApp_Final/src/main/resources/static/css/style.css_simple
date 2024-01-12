@@ -1,0 +1,19 @@
+.center
+{
+	text-align:center;
+	text-decoration: 
+	blink;
+	
+}
+
+li
+{
+	display: flex;
+	display: inline;
+	padding: 3px 15px
+}
+
+ul{
+	font-weight: bold;
+	text-align:center;
+}

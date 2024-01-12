@@ -1,0 +1,29 @@
+
+	table {
+border: 1px solid black;
+  width: auto;
+   table-layout: auto;
+    margin-left: auto; 
+  margin-right: auto;
+ 
+}
+
+
+th, td {
+border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+  white-space: nowrap;
+  
+   
+}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}

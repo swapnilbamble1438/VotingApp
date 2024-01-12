@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<section class = "center">
+	
+<form th:action = "@{/dologin}" method = "post">
+			 
+<h1>Login</h1>
+
+<div th:if=${session.vmsg}>
+			 <th:block th:text="${#session.removeAttribute('vmsg')}"></th:block>
+   		</div>
+
+<div th:if="${param.error}" style="color:red">
+          Invalid username and password <br><br>
+        </div>
+                            
+         <div th:if="${param.logout}" style="color:green">
+           You have been successfully logged out... <br><br>
+          </div>
+                       		
+
+Email Id: <input type = "text" name = "username" placeholder="Enter Your Email Id" required><br><br>
+
+Password: <input type = "password" name= "password" placeholder="Enter Your Password" required><br><br>
+
+<input type = "submit" value="Login">
+
+</form>
+	<br>	
+	
+<hr>
+<div style="color: firebrick">
+<h2>For Signing-in as a Admin </h2>
+<h3>Use</h3>
+<h3>Email Id: admin</h3>
+<h3>Password: admin</h3>
+</div>
+
+	<br>
+	</section>
+</body>
+</html>

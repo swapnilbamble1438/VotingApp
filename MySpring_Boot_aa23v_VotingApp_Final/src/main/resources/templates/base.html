@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap.css}" />
+    <title th:text="${title}">Title</title>
+  </head>
+  <body> 
+   <!-- Navbar -->
+
+  <ul>
+  <li><a class="active" th:href="@{/}">Home</a></li>
+  <li><a th:href="@{/register}">Register</a></li>
+  <li><a th:href="@{/signin}">Login</a></li>
+  <li><a th:href="@{/about}">About</a></li>
+</ul>
+
+    <!-- Navbar End -->
+    
+  
+   
+  
+    <div th:replace="${content}">
+    
+    
+    
+    </div>
+	
+	 
+	
+   
+    
+  
+  
+  
+ 
+    
+  </body>
+</html>

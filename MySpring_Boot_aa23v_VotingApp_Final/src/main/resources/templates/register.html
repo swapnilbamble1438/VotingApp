@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<section class="center">
+			
+		<h1>Register</h1>
+		
+		<div th:if=${session.fail}>
+			<h3 th:text="${session.fail}" style="color:red"></h3>
+			<th:block th:text="${#session.removeAttribute('fail')}"></th:block>
+   		</div>
+   		
+   		<div th:if=${session.msg}>
+			<h3 th:text="${session.msg}" style="color:green"></h3>
+   		
+				<th:block th:text="${#session.removeAttribute('msg')}"></th:block>
+	
+   		</div>
+   		
+   		
+    	
+		<form th:action="@{/createuser}" method="post">
+	
+			
+			User Name: <input type = "text" name = "name" placeholder="Enter Your User Name" required><br><br>
+			
+			Password: <input type = "password" name= "password" placeholder="Enter Your Password" required><br><br>
+			
+			Email Id: <input type = "text" name= "email" placeholder="Enter Your Email Id" required><br><br>
+			
+			Phone No: <input type = "number" name= "phone" placeholder="Enter Your Phone No" required><br><br>
+			
+			
+			<input type = "submit" value="Register">
+			
+		
+		</form>
+		<br>
+	
+	
+	</section>
+</body>
+</html>

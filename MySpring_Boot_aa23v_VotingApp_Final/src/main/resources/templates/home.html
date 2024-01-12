@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<section class="center">
+		<div class="text-center">
+		
+			
+			<h1 class="font-weight-bold">Voting Application</h1>
+			
+			<div th:if=${session.msg}>
+			<h3 th:text="${session.msg}" style="color:red"></h3>
+   			<th:block th:text="${#session.removeAttribute('msg')}"></th:block>
+   
+   		</div>	
+	
+		</div>
+		
+	
+	</section>
+</body>
+</html>
