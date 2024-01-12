@@ -35,7 +35,7 @@ url: https://swapnilbamble1438.github.io/VotingApplication/
 
 -  proceed -> Next
 
-            Now only select VotingApp\VotingApp
+            Now only select VotingApp\MySpring_Boot_aa23v_VotingApp_Final
             -> Finish
    
 -  If everything goes right Project will get successfully imported
