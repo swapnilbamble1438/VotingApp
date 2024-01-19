@@ -1,4 +1,4 @@
-# VotingApp 
+# VotingApp - Springboot, Thymeleaf
 
  ### Take a look at this Application
 url: https://swapnilbamble1438.github.io/VotingApplication/
